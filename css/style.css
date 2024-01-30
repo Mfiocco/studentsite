@@ -5,7 +5,7 @@ body { margin: 0; }
 /* GLOBAL COLORS */
 body { color: rgba(0, 0, 0, 0.8); }
 a { color: rgba(44, 63, 71, 0.8); }
-a:hover { color: rgba(169, 99, 99, .5);}
+a:hover { color: rgba(83, 235, 252,0.5);} 
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -16,7 +16,7 @@ body {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgb(202, 247, 209);
+    background-color: rgb(147, 186, 207);
     color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
@@ -25,12 +25,12 @@ header {
 }
 
 header a {
-    color: rgba(44, 63, 71, 0.8);
+    color: rgb(184, 122, 122);
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(169, 99, 99, .5);
+    color: rgba(83, 235, 252,0.5);
 }
 
 /* SITE ID */
@@ -73,6 +73,7 @@ main {
 }
 
 .hero p {
+    color: black;
     max-width: 30em;
     margin: 1em auto;
 }
@@ -144,10 +145,23 @@ aside {
     }
 }
 
-/* SUB-PAGES */
+/* CUSTOME STYLING FOR SPECIFIC & SUB-PAGES */
 .page-sub .hero {
-    background-color:rgba(0, 0, 0, 0.1) ;
-    color:rgba(0, 0, 0, 0.8) ;
+    background-color:rgba(34, 166, 196, 0.1) ;
+    color:rgba(107, 169, 192, 0.8) ;
+}
+
+.page-home header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+
+.page-home .hero{
+    background-image: url('../img/pexels-damon-hall-1705254.jpg');
+    background-position: center top;
+    background-size: cover;
+    padding: 10em 1em 6em 1em;
 }
 
 /* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
