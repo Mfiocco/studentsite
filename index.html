@@ -8,6 +8,7 @@
         content="This is an example student website for Michael Fiocco, a fictional web design student." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 
 <body class="page-home">
@@ -22,24 +23,40 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <section class="hero">
             <h2>Hi, I'm Michael</h2>
             <p>I'm an Interface Design student in the New Media Arts program and this is my student site where you can view my course work. Enjoy!</p>
         </section>
-        <section class="courses">
-            <h3>My Courses</h3>
-            <ul>
-                <li><a href="art128/index.html">ART 128 Interface Programming 1</a></li>
+        <section id="class" class="courses">
+            <h3>Courses</h3>
+            <ul class="cards">
+              <li>
+                <a href="art128/index.html">
+                    <span>ART 128</span> Interface Programming 1
+                </a>
+              </li>
             </ul>
-        </section>
+        </section>     
     </main>
 
     <footer>
         <nav class="social-nav">
             <ul>
-                <li><a href="https://github.com/mfiocco">My Github</a></li>
-                <li><a href="https://codepen.io/mfiocco">My Codepen</a></li>
+                <li>
+                    <a href="https://github.com/mfiocco">
+                        <i class="fa fa-github" style="font-size: 24px; color: white"></i
+                    ></a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/mfiocco">
+                        <i
+                            class="fa fa-codepen"
+                            style="font-size: 24px; color: white"
+                        ></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>

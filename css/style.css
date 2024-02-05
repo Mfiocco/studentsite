@@ -89,6 +89,56 @@ main {
     justify-content: center;
 }
 
+.courses .cards a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/564x/aa/15/67/aa1567ccc7b15d67d7f07446a75e0c38.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 2.5em 2em;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.courses .cards span {
+    display: block;
+    font-size: 2em;
+    line-height: 1.6;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.8);
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration:underline;
+}
+.courses .cards li {
+    max-width: 100%;
+    font-family:'Courier New', Courier, monospace
+}
+user agent stylesheet
+li {
+    /* display: list-item; */
+    text-align: -webkit-match-parent;
+}
+
+.courses .cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    padding: 3em 0;
+    font-size: 0.875em;
+    line-height: 1.1;
+}
+
 .courses ul {
     margin: 0;
     padding: 0;
