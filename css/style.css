@@ -4,7 +4,7 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body { color: rgba(0, 0, 0, 0.8); }
-a { color: rgba(44, 63, 71, 0.8); }
+a { color: rgba(90, 90, 90, 0.8); }
 a:hover { color: rgba(83, 235, 252,0.5);} 
 
 /* GLOBAL TYPOGRAPHY */
@@ -16,7 +16,7 @@ body {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgb(147, 186, 207);
+    background-color: rgb(131, 222, 236);
     color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
@@ -58,22 +58,24 @@ main {
 }
 
 /* HERO SECTION */
+
 .hero {
     background-color: rgb(202, 247, 209);
     text-align: center;
-    color: rgb(169, 99, 99);
+    color: rgb(225, 225, 225);
     padding: 6em 1em;
 }
 
 .hero h2 {
-    font-size: 6em;
+    font-size: 7em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
 }
 
 .hero p {
-    color: black;
+    font-size: 1.2em;
+    color: rgb(176, 211, 202);
     max-width: 30em;
     margin: 1em auto;
 }
@@ -81,7 +83,7 @@ main {
 /* COURSE SECTION */
 .courses {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(190, 222, 237);
+    background-color: rgb(131, 222, 236);
     padding: 6em 1em;
     display: grid;
     justify-content: center;
@@ -99,7 +101,7 @@ main {
 
 /* FOOTER */
 footer {
-    background-color: rgb(147, 186, 207);
+    background-color: rgb(68, 120, 173);
     border-top: 1px solid rgba(0, 0, 0, .05);
     padding: 1em;
 }
@@ -147,8 +149,8 @@ aside {
 
 /* CUSTOME STYLING FOR SPECIFIC & SUB-PAGES */
 .page-sub .hero {
-    background-color:rgba(34, 166, 196, 0.1) ;
-    color:rgba(107, 169, 192, 0.8) ;
+    background-color: black;
+    color:rgba(255, 255, 255, 0.8) ;
 }
 
 .page-home header {
@@ -158,10 +160,10 @@ aside {
 }
 
 .page-home .hero{
-    background-image: url('../img/pexels-damon-hall-1705254.jpg');
+    background-image: url(https://i.pinimg.com/originals/c2/b6/63/c2b6634c484d5e27903b2caa8eb2aea9.gif);
     background-position: center top;
     background-size: cover;
-    padding: 10em 1em 6em 1em;
+    padding: 20vh 1em 20vh 1em;
 }
 
 /* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
