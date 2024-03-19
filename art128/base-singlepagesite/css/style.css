@@ -605,3 +605,11 @@ form input[type=reset] {
 #contact {
     background: rgba(0, 0, 0, .1);
 }
+
+/* VERTICAL MEDIA query add height/ paddding to bottom of contact section only for large screens */
+
+@media (min-height: 600px) {
+    #contact {
+        padding-bottom: 20em;
+    }
+}
