@@ -399,7 +399,7 @@ section {
     text-align: center;
 }
 
-.hero h1, p {
+.hero h1, .hero p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
