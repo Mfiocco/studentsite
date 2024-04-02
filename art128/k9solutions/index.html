@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Base Site | Single Page Site</title>
-    <meta name="description" content="SiteBase: a minimalistic HTML + CSS + JS base front-end framework for simple web site projects.">
+    <title>K9 Solutions</title>
+    <meta name="description" content="A website for a dog training company">
    
     <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,125 +18,181 @@
     <header class="site-header toggle-nav animated sticky">
         <div class="container">
             <div class="site-id">
+                
                 <h1>
-                    <a href="#top">Site Name</a>
-                    <span class="hidden-sm"> / Single Page</span>
+                    <a href="#top"><img src="img/K9dog.png" alt="K9 Solutions logo" width="1500" height="1500"/></a>
                 </h1>
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu</div>
                 <ul class="nav">
-                    <li><a class="scroll" href="#top">Home</a></li>
-                    <li><a class="scroll" href="#about">About</a></li>
-                    <li><a class="scroll" href="#contact">Contact</a></li>
+                    <li><a class="scroll" href="#about">ABOUT</a></li>
+                    <li><a class="scroll" href="#services">SERVICES</a></li>
+                    <li><a class="scroll" href="#contact">CONTACT</a></li>
+                    <li><a class="scroll" href="#testimonials">TESTIMONIALS</a></li>
+                    <li><a class="scroll" href="#gallery">GALLERY</a></li>
                 </ul>
             </nav>
+            <i class="fa-brands fa-instagram"></i>
         </div>
     </header>
 
     <main class="site-main">
         <section class="hero text-centered">
-            <div class="container"></div>
-            <h1>This is the Hero Section</h1>
-            <p>This is the hero section on the top of a single page web site</p>
-            <a class="button scroll" href="#about">Learn More About Us</a>
-            <a class="button alt scroll" href="#contact">Get in Touch</a>
+            <div class="container">
+                <img src="img/k9logo.png" alt="K9 Solutions logo" width="1500" height="1500"/>
+                <p>Dog Training | Canine Education</p> 
+                 <a class="button scroll" href="#contact">GET STARTED</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">ABOUT</h2>
+                <article>
+                    <p>K9 Solutions is a dog training and canine education company based out of Honolulu, Oahu. The company has been around since 2023 and was created by a skillful canine educator, Max Lee. His training focuses on building and strengthening each client’s relationship to their furry companion.
+                    </p>
+
+                   <p>Max sets his clients up for success by viewing dog training through a realistic lens; using realistic techniques while setting realistic boundaries and realistic expectations for you and your dog.</p>
+
+                    <h5>
+                        Our core philosophy:
+                    </h5>
+                    
+                    <h6>Relationship-Based Training</h6>
+                    <h6>Balanced Techniques</h6>
+                    <h6>Fair and Ethical</h6>
+                </article>
+
+                <img src="img/maxpic.png" alt="logo" width="1500" height="1500"/>
+
             </div>
         </section>
         
-        <section>
+        <section id="services">
             <div class="container">
+                <h2 class="section-title">SERVICES</h2>
+                <article>
+                    <ul>
+                        <li>Private Sessions</li>
+                        <li>Basic Leash Training</li>
+                        <li>Advanced Obedience</li>
+                        <li>House SittingDog</li>
+                        <li>Walking/Drop-in (Kaimuki Clients*)</li>
+                        <li>Resource Guarding</li>
+                        <li>Separation Anxiety</li>
+                        <li>Reactivity and Aggression</li>
+                        <li>Behavior Modification</li>
+                        <li>Socialization and Exposure</li>
+                    </ul>
+                </article>
+
+                <img src="img/meelopic.png" alt="logo" width="1500" height="1500"/>
+
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">CONTACT</h2>
+                <h5>SIGN UP FOR A FREE CONSULTATION</h5>
+                <h6>K9 Solutions HI | Onboarding</h6>
+
+                <p>Aloha! Thanks for taking the first step towards building a better relationship with your dog!</p>
+                <p>Please answer these questions to get started.</p>    
+                <p>All information provided will remain confidential and is used for contact purposes only.</p>
+                
+                <h6>k9solutionshi@gmail.com</h6>
+                    
+                
+
+                <form>
+                    <label for="contact_name">Name*</label>
+                    <input class="text" type="text" value="" name="contact_name" id="contact_name">
+        
+                    <label for="contact_email">Email*</label>
+                    <input class="text" type="text" value="" name="contact_email" id="contact_email">
+
+                    <label for="contact_phone">Phone Number*</label>
+                    <input class="text" type="text" value="" name="contact_phone" id="contact_phone">
+
+                    <label for="contact_method">Preferred Method of Contact*</label>
+                    <input class="text" type="text" value="" name="contact_method" id="contact_method">
+
+                    <label for="contact_location">Where Are You Located*</label>
+                    <input class="text" type="text" value="" name="contact_location" id="contact_location">
+
+                    <label for="contact_reference">How Did You Hear About Us*</label>
+                    <input class="text" type="text" value="" name="contact_reference" id="contact_reference">
+        
+                    <label for="contact_message">Tell Us About You:</label>
+                    <textarea name="contact_message" id="contact_message"></textarea>
+        
+                    <input type="submit" value="Submit">   
+                </form> 
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-title">TESTIMONIALS</h2>
+                <article>
+                    <p>
+                        K9 Solutions Dog Training exceeded my expectations! Their expert trainers provided personalized sessions that transformed my dog's behavior. Now, our bond is stronger than ever. Highly recommend!
+                        Laura & Pretzel
+                    </p>
+                    <p>
+                        K9 Solutions made training my pup a blast! The team's enthusiasm and expertise turned learning into a game for my furry friend.  Highly recommend for a pawsitive experience!
+                        Ryan & Jasper
+                    </p>
+                    <p>
+                        K9 Solutions rocked our world! Effective training, wagging tails—couldn't ask for more! Highly recommend!
+                        Jenn, Bernard & Penny
+                    </p>
+
+                    <div class="row">
+                        <div class="column one-third">
+                            <img src="img/testimonial1.png" alt="Image of woman and her dog" width="1500" height="1500"/>
+                        </div>
+                        <div class="column one-third">
+                            <img src="img/testimonial2.png" alt="image of guy and his dog" width="1500" height="1500"/>
+                            
+                        </div>
+                        <div class="column one-third">
+                            <img src="img/testimonial3.png" alt="Image of a couple and their dog" width="1500" height="1500"/>
+                            
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2 class="section-title">TRAINING TALES</h2>
 
                 <div class="row">
                     <div class="column one-third">
-                        <img src="img/placeholder-1x1.gif" alt="Placeholder Image" width="1500" height="1500"/>
-                        <h3>Heading 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper, nunc quis euismod porta, ligula dolor interdum dui, quis.</p>
-                        <a href="#" class="button">Button</a>
+                        <img src="img/dog1.png" alt="A closeup of dog's face" width="1500" height="1500"/>
                     </div>
                     <div class="column one-third">
-                        <img src="img/placeholder-1x1.gif" alt="Placeholder Image" width="1500" height="1500"/>
-                        <h3>Heading 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper, nunc quis euismod porta, ligula dolor interdum dui, quis.</p>
-                        <a href="#" class="button">Button</a>
+                        <img src="img/dog2.png" alt="A closeup of dog's face" width="1500" height="1500"/>
+                        
                     </div>
                     <div class="column one-third">
-                        <img src="img/placeholder-1x1.gif" alt="Placeholder Image" width="1500" height="1500"/>
-                        <h3>Heading 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper, nunc quis euismod porta, ligula dolor interdum dui, quis.</p>
-                        <a href="#" class="button">Button</a>
+                        <img src="img/dog3.png" alt="A closeup of dog's face" width="1500" height="1500"/>
+                        
+                    </div>
+                    <div class="column one-third">
+                        <img src="img/dog4.png" alt="A closeup of dog's face" width="1500" height="1500"/>
+                        
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="about">
-            <div class="container">
-                <h3 class="section-title">About Us</h3>
-                <article>
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-
-                    <h2 class="subhead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
-                    
-                    <h3 class="date">Date MM/DD/YYYY</h3> 
-                    
-                    <p>Sed faucibus egestas ultricies. Vivamus enim auctor hendrerit elit. Morbi facilisis tempus orci, sed placerat metus auctor non. Etiam non lacus erat, sit amet porttitor tellus. Curabitur pretium tincidunt tortor in vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi quam eros, bibendum ut pellentesque id, tristique eget lacus. Ut fermentum ligula vitae est luctus at iaculis nunc placerat.</p>
-
-                   <p>Vestibulum urna erat, viverra in dignissim quis, bibendum lobortis sapien. Integer porttitor magna ut orci aliquam sed suscipit eros adipiscing. Pellentesque feugiat mi id eros placerat sit amet hendrerit tortor ultricies. Praesent pellentesque lorem eget ligula egestas sit amet elementum lacus dignissim. Duis semper sapien id massa vehicula quis malesuada est molestie. Vestibulum ac nunc in metus egestas sodales. In dignissim luctus eros, non facilisis nisi vulputate vulputate. Cras bibendum venenatis ipsum, sed euismod quam rhoncus rhoncus. Nullam consectetur augue ac mi convallis nec tempor odio pellentesque.</p>
-
-                    <h5>Nam ut metus sit amet odio tincidunt tincidunt vitae a orci.</h5>
-                    
-                    <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
-
-                    <blockquote>
-                        Pellentesque rutrum, nunc sit amet adipiscing tempor, erat leo laoreet est, eu rhoncus risus elit quis lectus. Cras nulla tellus, sollicitudin quis commodo eget, commodo vel sapien.
-                    </blockquote>
-
-                    <p>Auctor pretium elit. Nunc enim urna, accumsan sed ullamcorper eu, scelerisque gravida sapien. Phasellus tincidunt nunc elementum turpis ornare sit amet congue diam sodales. Sed interdum neque ut ipsum vestibulum euismod. Nulla nec purus ante. Praesent non diam et leo volutpat dictum in id erat. Donec elementum, leo ac blandit ornare, nunc nunc tincidunt mauris, sed ultricies lorem nibh quis lorem.</p>
-
-                    <p>Morbi mauris mauris, aliquam eu sollicitudin id, sollicitudin sed nisl. Cras et nunc a leo pulvinar tincidunt. Suspendisse dignissim, sem sit amet consequat varius, eros enim ullamcorper eros, at tincidunt lacus dolor in turpis. Proin tempus ultricies mauris. Sed eu tortor nisi. Pellentesque non nisi justo, vel suscipit orci. Integer dolor metus, scelerisque aliquet sollicitudin sit amet, posuere at mauris. Nunc sem tellus, consequat at pulvinar quis, fringilla vel libero. Integer faucibus fermentum eros.</p>
-
-                    <h5>Proin non ipsum ligula, ornare semper purus.</h5>
-
-                    <p>Morbi tincidunt ligula sit amet nulla venenatis sit amet tristique nisl pretium. Nunc facilisis, orci et gravida blandit, lectus augue viverra augue, non tempus ligula leo nec arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eu elit quis sem posuere sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris congue dolor a magna accumsan eu pharetra mi porta. Cras eget interdum velit.</p>
-
-                    <p>Aenean id nulla in dui iaculis adipiscing. Quisque commodo odio ut lacus auctor pellentesque. Pellentesque egestas pellentesque lorem sed imperdiet. Etiam porta egestas lectus eget interdum. Pellentesque purus neque, elementum non lobortis quis, vulputate ac metus. Etiam et purus a justo accumsan consequat eu elementum ligula. Nullam blandit pretium augue, vitae suscipit mauris lobortis sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar leo.</p>
-
-                    <h5>Nam ut metus sit amet odio tincidunt tincidunt vitae a orci.</h5>
-                    
-                    <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
-
-                    <p>Auctor pretium elit. Nunc enim urna, accumsan sed ullamcorper eu, scelerisque gravida sapien. Phasellus tincidunt nunc elementum turpis ornare sit amet congue diam sodales. Sed interdum neque ut ipsum vestibulum euismod. Nulla nec purus ante. Praesent non diam et leo volutpat dictum in id erat. Donec elementum, leo ac blandit ornare, nunc nunc tincidunt mauris, sed ultricies lorem nibh quis lorem.</p>
-
-                    <p>Morbi mauris mauris, aliquam eu sollicitudin id, sollicitudin sed nisl. Cras et nunc a leo pulvinar tincidunt. Suspendisse dignissim, sem sit amet consequat varius, eros enim ullamcorper eros, at tincidunt lacus dolor in turpis. Proin tempus ultricies mauris. Sed eu tortor nisi. Pellentesque non nisi justo, vel suscipit orci. Integer dolor metus, scelerisque aliquet sollicitudin sit amet, posuere at mauris. Nunc sem tellus, consequat at pulvinar quis, fringilla vel libero. Integer faucibus fermentum eros.</p>
-
-                    <h5>Aenean tristique odio et dui scelerisque scelerisque porta od.</h5>
-
-                    <p>Proin non ipsum ligula, ornare semper purus. Morbi tincidunt ligula sit amet nulla venenatis sit amet tristique nisl pretium. Nunc facilisis, orci et gravida blandit, lectus augue viverra augue, non tempus ligula leo nec arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eu elit quis sem posuere sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris congue dolor a magna accumsan eu pharetra mi porta. Cras eget interdum velit.</p>
-
-                    <p>Aenean id nulla in dui iaculis adipiscing. Quisque commodo odio ut lacus auctor pellentesque. Pellentesque egestas pellentesque lorem sed imperdiet. Etiam porta egestas lectus eget interdum. Pellentesque purus neque, elementum non lobortis quis, vulputate ac metus. Etiam et purus a justo accumsan consequat eu elementum ligula. Nullam blandit pretium augue, vitae suscipit mauris lobortis sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar leo.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h3 class="section-title">Contact Us</h3>
-                <form>
-                    <label for="contact_name">Name:</label>
-                    <input class="text" type="text" value="" name="contact_name" id="contact_name">
-        
-                    <label for="contact_email">Email Address:</label>
-                    <input class="text" type="text" value="" name="contact_email" id="contact_email">
-        
-                    <label for="contact_message">Message:</label>
-                    <textarea name="contact_message" id="contact_message"></textarea>
-        
-                    <input type="submit" value="Submit">
-                </form> 
-            </div>
-        </section>
 
 
     </main>
@@ -145,12 +201,19 @@
         <div class="container">
             <nav class="site-nav">
                 <ul>
-                    <li><a class="scroll" href="#top">Home</a></li>
                     <li><a class="scroll" href="#about">About</a></li>
+                    <li><a class="scroll" href="#services">Services</a></li>
                     <li><a class="scroll" href="#contact">Contact</a></li>
+                    <li><a class="scroll" href="#testimonials">Testimonials</a></li>
+                    <li><a class="scroll" href="#gallery">Gallery</a></li>
                 </ul>
             </nav>
         </div>
+
+        <h5>FOLLOW US!</h5>
+        <h6>k9solutionshi@gmail.com</h6>
+        <h6>(808)987-6543</h6>
+        
     </footer>
 
    <!-- SCROLL JS -->
