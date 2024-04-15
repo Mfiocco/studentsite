@@ -333,24 +333,23 @@ body.demo::before {
 
 /* SITE HEADER */
 .site-header {
-    background: rgba(234, 233, 230, 1);
+    /* background: rgba(234, 233, 230, 1); */
     border-bottom: 0px solid #ccc;
     padding: 0.5em 4%;
+    position: absolute;
+    width: 100%;
 }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
     .site-header .container {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
-}
+/* } */
 
 /* SYTLING FOR BOTH HEADER AND FOOTER */
 
-.site-footer {
-    background: rgba(179, 208, 214, 1);
-}
 
 .site-header a,
 .site-footer a {
@@ -361,6 +360,32 @@ body.demo::before {
 .site-footer a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
+}
+
+.site-footer {
+    background: rgba(179, 208, 214, 1);
+}
+
+.site-footer .container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+@media (min-width: 768px) {
+    .site-footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .site-footer .logo {
+        order: 2;
+    }
+    .site-footer .site-nav {
+        order: 1;
+    }
+    .site-footer .social-nav {
+        order: 3;
+    }
+
 }
 
 /* LOGO AREA */
@@ -375,7 +400,9 @@ body.demo::before {
 
 /* SITE NAV */
 
-.site-nav ul {
+
+
+.site-header .site-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -383,7 +410,7 @@ body.demo::before {
     justify-content: center;
 }
 
-.site-nav a {
+.site-header .site-nav a {
     display: block;
     padding: 1em;
 }
@@ -392,30 +419,13 @@ body.demo::before {
     display: none;
 }
 
-/* SECTIONS */
-section {
-    padding: 3em 0;
-}
 
-/* HERO */
-
-.hero {
-    padding: 6em 4%;
-    background-color: rgba(0,0,0,.1);
-    text-align: center;
-}
-
-.hero h1, .hero p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* TOGGLE NAV */
-@media (max-width: 767px) {
-    .toggle-nav .site-id {
+/* @media (max-width: 767px) { */
+    /* .toggle-nav .site-id {
         position: absolute;
-    }
+    } */
     .toggle-nav .site-nav {
        text-align: right;
     }
@@ -468,12 +478,26 @@ section {
     .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
         content: "\2715";
     }
+/* } */
+
+  /* SECTIONS */
+section {
+    padding: 3em 0;
 }
 
-/* Main Sections */
-section {
-    padding: 1.5em 0;
-  }
+/* HERO */
+
+.hero {
+    padding: 10em 4% 6em 4%;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.hero h1, .hero p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
   
   /* Hero Sections */
   .container .hero {
@@ -482,12 +506,6 @@ section {
     margin-bottom: 3em;
   }
   
-  .hero {
-    background: #ddd;
-    border-top: none;
-    padding: 3em 1em 3em 1em;
-    /* margin-bottom: 1.5em; */
-  }
   .hero h1,
   .hero h2 {
     font-size: 3em;
@@ -548,7 +566,7 @@ article {
 
   /* FORMS */
 form {
-    margin: 2em auto;
+    margin: 1em auto;
     max-width: 600px;
   }
   
@@ -585,11 +603,11 @@ form input[type=reset] {
 
 .section-title {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .section-title::after {
-    content: "";
+    /* content: ""; */
     display: block;
     width: 100px;
     margin: .5em auto;
@@ -610,6 +628,7 @@ form input[type=reset] {
 }
 #contact {
     background: rgba(0, 0, 0, .1);
+    /* text-align: right; */
 }
 
 /* VERTICAL MEDIA query add height/ paddding to bottom of contact section only for large screens */
@@ -628,3 +647,31 @@ img {
     height: auto;
 }
 
+/*  GRID SYSTEM */
+.row {
+  --gridgap: 4%;
+  --gridgap-half: calc( var(--gridgap) / 2 );
+  padding-bottom: var(--gridgap);
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+/*     align-items: center; */
+    /* gap: var(--gridgap);
+    padding: 0;
+    margin: var(--gridgap); */
+  }
+  .row > * {
+    flex-grow: 1;
+  }
+  .row.swappit {
+    flex-direction: row-reverse;
+  }
+
+  .row .one-half { max-width: calc( 50% - var(--gridgap-half) ); }
+  .row .one-third { max-width: calc( 33.3333% - var(--gridgap-half) ); }
+  .row .two-thirds { max-width: calc( 66.6666% - var(--gridgap-half) ); }
+  
+}
