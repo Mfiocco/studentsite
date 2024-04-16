@@ -566,7 +566,7 @@ article {
 
   /* FORMS */
 form {
-    margin: 1em auto;
+    margin: 6em auto;
     max-width: 600px;
   }
   
@@ -674,4 +674,66 @@ img {
   .row .one-third { max-width: calc( 33.3333% - var(--gridgap-half) ); }
   .row .two-thirds { max-width: calc( 66.6666% - var(--gridgap-half) ); }
   
+}
+
+/* SET BACKGROUND COLORS HERE */
+
+.hero {
+    background-color: rgba(199, 229, 233, 1);
+    background-image: linear-gradient(180deg, rgba(156, 201, 210, 1), rgba(210, 233, 238, 1));
+    background-image: url(../img/grass.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+#about {
+    background-color: rgba(231, 216, 184, 1);
+    background-image: url(../img/about-paws.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+
+}
+
+#services {
+    background-color: rgba(228, 217, 187, 1);
+    background-image: linear-gradient(180deg, 
+        rgba(231, 216, 184, 1), 
+        rgba(228, 217, 187, 1)
+    );
+    background-image: url(../img/services-paws.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+
+.overlay {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the overlay is above the background */
+}
+
+#contact {
+    background-image: linear-gradient(180deg, 
+        rgba(228, 217, 187, 1),
+        rgba(195, 218, 220, 1));
+    background-image: url(../img/3lines.png);
+    background-repeat: no-repeat;
+    background-position: center auto;
+    background-size: contain;
+    padding: 0em;
+}
+
+#testimonials {
+    background-color: rgba(195, 218, 220, 1);
+}
+
+#gallery {
+    background-color: rgba(195, 218, 220, 1);
+}
+
+.social-nav {
+    text-align: center;
+    
 }
