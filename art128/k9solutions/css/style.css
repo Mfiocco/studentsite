@@ -62,7 +62,7 @@ h1 {
 h2 {
     font-size: 2.25em;
     /* 36px / 16px = 2.25em */
-    line-height: 1.1;
+    line-height: 1;
     font-family: "Notable", sans-serif;
     font-weight: 400;
     font-style: normal;     
@@ -87,6 +87,23 @@ h5 {
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
+    display: flex;
+    
+}
+
+/* SOCIAL NAV */
+
+.social-nav ul,
+.social-nav li {
+    margin-top: .15em;
+    margin-left: .25em;
+    padding: 0;
+    list-style: none;
+}
+
+.social-nav ul {
+    display: flex;
+    padding-top: 1.2em;
 }
 
 .button {
@@ -102,7 +119,7 @@ h5 {
 }
 
 #about p {
-    padding: .5em;
+    padding-bottom: .5em;
 }
 
 #about h5 {
@@ -128,11 +145,18 @@ h5 {
     padding: 0;
     margin: 0;
 }
-#services li {
+#services details {
     /* background-color: red; */
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2.4;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+}
+
+#services p {
+    font-family: "Khula", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: .8em;
 }
 
 #contact p {
@@ -230,7 +254,6 @@ form {
     font-style: normal;
     font-size: .85em;
     line-height: 1.5;
-    color: rgba(127, 127, 127, 1);
 
 }
 
@@ -321,7 +344,7 @@ form input[type=submit] {
     background-color: rgba(254, 206, 131, 1);
     border: 1px solid rgba(254, 206, 131, 1);
     color: #1f1f1f;
-    padding: 0.75em 1em;
+    padding: 1.25em 1.25em;
     border-radius: 1em;
     margin-top: 0.5em;
     margin-bottom: 0;
@@ -379,6 +402,34 @@ body { margin: 0;}
         max-width: 1200px;
     }
 }
+
+@media (max-width: 1250px) {
+    .top-nav .site-nav ul {
+        background-color: rgba(219, 245, 247, 0.8);
+    }
+  }
+ 
+  @media (max-width: 768px) {
+    .site-footer .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        
+    }
+  }
+
+  @media (max-width: 768px) {
+    .site-footer .site-nav {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        text-align: center;
+        padding: 2em;
+        
+    }
+  }
 
 /* GRID
 section
@@ -510,7 +561,7 @@ body.demo::before {
 }
 
 .site-footer {
-    background: rgba(179, 208, 214, 1);
+    background: rgba(132, 167, 174, 0.5);
 }
 
 .site-footer .container {
@@ -580,11 +631,22 @@ body.demo::before {
         display: block;
         display: inline-block;
         cursor: pointer;
-        padding: .3em .8em;
+        padding: 1em 1em;
         margin: .8em 0;
         border: 1px solid black;
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        aspect-ratio: 1;
+        
     }
+
+    .toggle-nav .site-nav .menu-button span {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+
+    }
+
     .toggle-nav .site-nav .menu-button::selection {
        background-color: rgba(255, 255, 255, 0);
     }
@@ -595,12 +657,12 @@ body.demo::before {
     .toggle-nav .site-nav a:hover {
         color: white;
     }
-    .toggle-nav[data-navstate="closed"] ul {
+    .toggle-nav[data-navstate="closed"] .site-nav ul {
         height: 0;
         overflow: hidden;
 
     }
-    .toggle-nav[data-navstate="open"] ul {
+    .toggle-nav[data-navstate="open"] .site-nav ul {
         height: auto;
         overflow: visible;
 
@@ -615,7 +677,7 @@ body.demo::before {
     .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
         display: inline-block;
-        padding: .2em .4em;
+        padding: .3em .4em;
         margin: 0;
         color: rgba(255, 255, 255, 0.8);
         font-size: 1.5em;
@@ -679,8 +741,8 @@ section {
 /* Articles */
 article {
     max-width: 38em;
-    margin: 0 auto 8em auto;
-    padding: 2em 0;
+    margin: 0 auto 1em auto;
+    padding: 0em 0;
   }
   article h1 {
     text-align: center;
@@ -712,7 +774,7 @@ article {
 
   /* FORMS */
 form {
-    margin: 6em auto;
+    margin: 1.1em auto;
     max-width: 600px;
   }
   
@@ -749,7 +811,8 @@ form input[type=reset] {
 
 .section-title {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    margin-top: 0em;
 }
 
 .section-title::after {
@@ -775,7 +838,7 @@ form input[type=reset] {
 
 @media (min-height: 600px) {
     #contact {
-        padding-bottom: 20em;
+        padding-bottom: 1em;
     }
 }
 
@@ -783,7 +846,7 @@ form input[type=reset] {
     max-width: 100px;
 }
 img {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
 
@@ -863,21 +926,15 @@ img {
     background-position: center top, left top;
 }
 
-#testimonials {
+.orb-wrapper {
     background-color: rgba(195, 218, 220, 1);
     background-image: url(../img/spot-background.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: relative;
+    background-position: center top;
+    background-size: cover;
 }
 
-#gallery {
-    background-color: rgba(195, 218, 220, 1);
-    background-image: url(../img/spot-background.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: relative;
-}
+
 
 .social-nav {
     text-align: center;
@@ -908,18 +965,16 @@ img {
     padding-top: 4em;
 }
 
-#testimonials p {
+#testimonials .testimonial-block {
     background-color: rgba(245, 246, 248, 0.55);
     text-align: center;
     opacity: 70%;
-    /* padding: .5em; */
+    padding: 2em;
+    margin: 10px;
 }
 
 #testimonials h6 {
-    background-color: rgba(245, 246, 248, 0.55);
     color: rgba(105, 69, 0, 1);
-    opacity: 70%;
-    text-align: center;
 }
 
 #gallery .dog-gallery {
@@ -927,10 +982,49 @@ img {
     
 }
 
-#gallery img {
+.dog-gallery img {
     opacity: 1;
   }
   
-#gallery img:hover {
+.dog-gallery img:hover {
     opacity: .5;
   }
+
+.site-footer .site-nav ul,
+.site-footer .site-nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dog-lay {
+    padding-top: 2em;
+    width: 25%;
+  }
+
+details {
+    padding-bottom: 0.2em;
+}
+
+details > summary {
+    list-style-type: '+';
+}
+
+details[open] > summary {
+    list-style-type: '—';
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 0em;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        text-align: center;
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+    }
+    
+}
