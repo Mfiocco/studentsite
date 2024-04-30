@@ -149,7 +149,9 @@ h5 {
     /* background-color: red; */
     font-size: 1.2em;
     line-height: 2.4;
-    /* text-decoration: underline; */
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: .3em;
 }
 
 #services p {
@@ -510,15 +512,21 @@ body.demo::before {
 /* SEMANTIC GRID SYSTEM */
 
 .row > .column {
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 @media (min-width: 768px) {
     .row {
         display: flex;
         justify-content: space-between;
-        margin-left: -2%;
-        margin-right: -2%;
+        /* margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 9%;
+        margin-right: 9%; */
     }
 
     .row > .column {
@@ -889,7 +897,7 @@ img {
 .row {
   --gridgap: 4%;
   --gridgap-half: calc( var(--gridgap) / 2 );
-  padding-bottom: var(--gridgap);
+  /* padding-bottom: var(--gridgap); */
 }
 
 @media (min-width: 768px) {
@@ -1004,7 +1012,7 @@ img {
     background-color: rgba(245, 246, 248, 0.55);
     text-align: center;
     opacity: 70%;
-    padding: 2em;
+    padding: 1em;
     margin: 10px;
 }
 
@@ -1013,7 +1021,9 @@ img {
 }
 
 #gallery .dog-gallery {
-    background-color: rgba(70, 84, 86, 1);
+    background-color: rgba(70, 84, 86, .3);
+    border-radius: 2em;
+    
     
 }
 
@@ -1022,7 +1032,8 @@ img {
   }
   
 .dog-gallery img:hover {
-    opacity: .5;
+    /* opacity: .7; */
+    transform: scale(1.5);
   }
 
 .site-footer .site-nav ul,
@@ -1043,6 +1054,7 @@ details {
 
 details > summary {
     list-style-type: '+';
+    /* color: white; */
 }
 
 details[open] > summary {
@@ -1061,6 +1073,10 @@ details[open] > summary {
         margin-bottom: 1.5em;
         margin-top: 1em;
     }
-    
 }
 
+#gallery .row {
+    /* background-color: pink; */
+    padding-left: 5em;
+    padding-right: 5em;
+}
