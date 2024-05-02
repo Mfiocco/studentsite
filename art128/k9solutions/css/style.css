@@ -145,14 +145,6 @@ h5 {
     padding: 0;
     margin: 0;
 }
-#services details {
-    /* background-color: red; */
-    font-size: 1.2em;
-    line-height: 2.4;
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-underline-offset: .3em;
-}
 
 #services p {
     font-family: "Khula", sans-serif;
@@ -1052,14 +1044,13 @@ details {
     padding-bottom: 0.2em;
 }
 
-details > summary {
+/* details > summary {
     list-style-type: '+';
-    /* color: white; */
-}
+} */
 
-details[open] > summary {
+/* details[open] > summary {
     list-style-type: '—';
-}
+} */
 
 .section-title {
     text-align: center;
@@ -1080,3 +1071,85 @@ details[open] > summary {
     padding-left: 5em;
     padding-right: 5em;
 }
+
+/* SERVICES ACCORDIAN*/
+
+.k9-accordion details {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: .5em;
+    padding-bottom: .1em;
+    border-bottom: 1px solid white;
+    margin-bottom: .5em;
+  }
+  
+  .k9-accordion summary {
+    font-weight: bold;
+    font-size: 1em;
+    list-style-type: none;
+    margin-bottom: .25em;
+    cursor: pointer;
+  }
+  
+  /* .k9-accordion details *:not(summary) {
+      margin-right: 1em;
+      font-size: .9em;
+  } */
+  
+  
+  .k9-accordion summary::-moz-list-bullet {
+      list-style-type: none;
+      display: block;
+  }
+  
+  .k9-accordion summary::marker,
+  .k9-accordion summary::-webkit-details-marker {
+      /* color: red; */
+  }
+  
+  .k9-accordion summary::before {
+      position: absolute;
+      right: 1em;
+      font-weight: normal;
+      transition: all 0.2s ease-out;
+  
+      /* Arrow Version */
+      /* border-right: 2px solid;
+      border-bottom: 2px solid;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: 1.4em;
+      transform: rotate(45deg) translate(-4px, -4px);
+   */
+      /* Plus / Minus Version   */
+        content: "+";
+  }
+  
+  .k9-accordion details[open] summary::before {
+      /* Arrow Version   */
+      /* transform: rotate(225deg); */
+  
+      /* Plus / Minus Version   */ 
+      content: "|";
+      transform: rotate(-90deg);
+  }
+
+  #services img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5.4em;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5.4em;
+}
+
+.site-footer .logo {
+    /* max-width: 100%;
+    height: auto; */
+    margin-top: 1em;
+}
+
