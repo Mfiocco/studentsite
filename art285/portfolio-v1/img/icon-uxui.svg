@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 375.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke-width: 4.05px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fef273;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 7px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #b1e3fa;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" width="384" height="375.12" rx="67.05" ry="67.05"/>
+  <circle class="cls-2" cx="192.43" cy="190.42" r="128.62"/>
+  <ellipse class="cls-1" cx="157.95" cy="150.42" rx="6.9" ry="40"/>
+  <ellipse class="cls-1" cx="221.29" cy="150.42" rx="6.9" ry="40"/>
+  <path class="cls-3" d="M129.13,230.65c34.99,34.99,91.62,34.99,126.61,0"/>
+</svg>

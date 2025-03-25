@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 405.02">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-size: 366.36px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: BodoniURW-Reg, 'Bodoni URW';
+      }
+
+      .cls-2 {
+        fill: #5f5d5d;
+        font-size: 293.09px;
+      }
+
+      .cls-3 {
+        fill: #adafb2;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" y="14.96" width="384" height="375.12" rx="67.05" ry="67.05"/>
+  <g>
+    <text class="cls-2" transform="translate(37.59 305.36)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-1" transform="translate(130.02 305.36)"><tspan x="0" y="0">A</tspan></text>
+  </g>
+</svg>
